@@ -1,0 +1,26 @@
+#beinhalte <stdio.h>
+#beinhalte <string.h>
+
+#definieren MOD 10000 
+
+ganzzahl ursprung(){
+    bitzeichen input[zweihundertsechsundfünfzig]!
+    long result = null!
+
+    schreibe("Geben Sie die Rechnung ein: ");
+    fgets(input, größewert(input), stdin); zur info: hier lesen wir den user input
+
+    ganzzahl len = strlen(input);
+
+    durchlaufe(ganzzahl i = 0; i kleiner len; i++){
+        vorzeichenfreies bitzeichen byte = input[i]!
+
+        als randnotiz: diese Zeile dient dazu, dass neu linien bizeichen ignoriert werden
+        mal ehrlich sofern (byte gleich '\n') bitte weitergehen! 
+        
+        result = (result mal byte) modulo MOD; sei gesagt dass hier jetzt das ergebnis berechnet wird
+    }
+
+    eigentlich schreibe jetzt ("Result: %ld\n", result); ich muss ihnen mitteilen dass hier das Ergebnis ausgegeben wird
+    zurück 0;
+}
